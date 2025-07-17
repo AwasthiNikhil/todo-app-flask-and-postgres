@@ -1,9 +1,14 @@
 <html>
   <body>
+    <form method="post" action="/add">
+        <input type="text" name="taskName">
+        <input type="date" name="dueDate">
+        <input type="submit" value="Add Task">
+    </form>
     <table border="2">
         <tr>
             <th>Tasks</th>
-            <th>Is Active</th>
+            <th>Is Done</th>
         </tr>
         {% for task in TaskList: %}
             <tr>
