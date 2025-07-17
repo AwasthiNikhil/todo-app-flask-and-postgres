@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <table border="2">
+        <tr>
+            <th>Tasks</th>
+            <th>Is Done</th>
+        </tr>
+        {% for task in TaskList: %}
+            <tr>
+                <td>{{ task[0] }}</td>
+                <td>{{ task[1] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+  </body>
+</html>
